@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добавить объявление</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__content content-wrapper-header">
+      <a href="/" class="logo"><img src="./images/icon/evacuator_icon1.png" alt="логотип эвакуатор"></a>
+      <div class="header__menu">
+        <nav class="site-navigation">
+          <ul class="list header__list">
+            <li class="list__item"><a class="list__link" href="#home">О Проекте</a></li>
+            <li class="list__item"><a class="list__link" href="#about">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="add.html" target="_blank" class="main-btn">Добавить объявление</a>
+      </div>
+      <div class="header__burger-menu burger-menu">
+        <span class="burger-menu__line-1"></span>
+        <span class="burger-menu__line-2"></span>
+        <span class="burger-menu__line-3"></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="decor-img bottom-v1">
+      <h1 class="big-title content-wrapper">Создание объявления</h1>
+    </div>
+    <div class="form-info bottom-v1 content-wrapper x-center">
+      <div class="form__image-wrapper">
+        <img src="./images/icon/marketeq_money-alt-1.png" alt="Информация" class="form-info__image">
+      </div>
+      <p class="form-info__text">Заполните все поля формы на размещение своего объявления на сайте. Размещение
+        объявления
+        платное. Стоимость за одно объявление составляет 990 руб. Объявление будет опубликовано на сайте после оплаты и
+        проверки модератором.</p>
+    </div>
+    <form class="form content-wrapper x-center" action="#" method="post">
+      <div class="form__header x-center">
+        <label class="form__label" for="city">Выберите город:</label>
+        <select class="form__select form__input" id="city" name="city">
+          <option class="form__option" value="Москва">Москва</option>
+          <option class="form__option" value="Город N">Город N</option>
+          <option class="form__option" value="Мичуринск">Мичуринск</option>
+          <option class="form__option" value="Другой город">Другой город</option>
+        </select>
+        <label class="form__label" for="name">Ваше имя:</label>
+        <input class="form__input" type="text" id="name" name="name" required>
+        <label class="form__label" for="mobile">Номер мобильного телефона:</label>
+        <input class="form__input mask-mobile" type="tel" id="mobile" name="mobile" placeholder="+7 (999) 999 99 99"
+          required>
+        <label class="form__label" for="landline">Номер городского телефона:</label>
+        <input class="form__input mask-landline" type="tel" id="landline" name="landline"
+          placeholder="+7 (999) 999 99 99">
+        <label class="form__label" for="email">Ваш email:</label>
+        <input class="form__input" type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        <label class="form__label" for="address">Адрес стоянки эвакуатора:</label>
+        <input class="form__input mb-0" type="text" id="address" name="address" required>
+      </div>
+      <div class="container-form-title">
+        <h2 class="form__title">ИНФОРМАЦИЯ</h2>
+      </div>
+      <div class="form__textarea-info x-center">
+        <label class="form__label" for="title">Заголовок объявления (не более 50 символов):</label>
+        <input class="form__input" type="text" id="title" name="title" maxlength="50" required>
+        <label class="form__label" for="description">Описание объявления (не более 50 символов):</label>
+        <textarea class="form__text-area" id="description" name="description" maxlength="50" rows="2"
+          required></textarea>
+      </div>
+      <div class="container-form-title">
+        <h2 class="form__title">ЦЕНЫ</h2>
+      </div>
+      <div class="form__price x-center">
+        <div class="price-form price-form--mb-28">
+          <label class="price-form__label form__label" for="car-price">Легковые автомобили:</label>
+          <div class="price-form__input-wrapper">
+            <input class="price-form__input form__input" type="number" id="car-price" name="car_price" min="0">
+            <p class="rub">рублей</p>
+            <label class="price-form__checkbox-label">
+              <input type="checkbox" class="price-form__checkbox">
+              Услугу не оказываю
+            </label>
+          </div>
+        </div>
+
+
+
+        <div class="price-form price-form--mb-28">
+          <label class="price-form__label form__label" for="moto-price">Мототехника:</label>
+          <div class="price-form__input-wrapper">
+            <input class="price-form__input form__input" type="number" id="moto-price" name="moto_price" min="0">
+            <p class="rub">рублей</p>
+            <label class="price-form__checkbox-label">
+              <input type="checkbox" class="price-form__checkbox">
+              Услугу не оказываю
+            </label>
+          </div>
+        </div>
+
+
+        <div class="price-form price-form--mb-28">
+          <label class="price-form__label form__label" for="suv-price">Внедорожник:</label>
+          <div class="price-form__input-wrapper">
+            <input class="price-form__input form__input" type="number" id="suv-price" name="suv_price" min="0">
+            <p class="rub">рублей</p>
+            <label class="price-form__checkbox-label">
+              <input type="checkbox" class="price-form__checkbox">
+              Услугу не оказываю
+            </label>
+          </div>
+        </div>
+
+        <div class="price-form price-form--mb-28">
+          <label class="price-form__label form__label" for="minibus-price">Микроавтобус:</label>
+          <div class="price-form__input-wrapper">
+            <input class="price-form__input form__input" type="number" id="minibus-price" name="minibus_price" min="0">
+            <p class="rub">рублей</p>
+            <label class="price-form__checkbox-label">
+              <input type="checkbox" class="price-form__checkbox">
+              Услугу не оказываю
+            </label>
+          </div>
+        </div>
+
+
+        <div class="price-form price-form--mb-28">
+          <label class="price-form__label form__label" for="distance-rate">Загородный тариф:</label>
+          <div class="price-form__input-wrapper">
+            <input class="price-form__input form__input" type="number" id="distance-rate" name="distance-rate_price"
+              min="0">
+            <p class="rub">рублей</p>
+            <label class="price-form__checkbox-label">
+              <input type="checkbox" class="price-form__checkbox">
+              Услугу не оказываю
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="container-form-title">
+        <h2 class="form__title">ФОТО</h2>
+      </div>
+      <div class="form__footer x-center">
+        <div class="form__photo">
+          <label class="form__label" for="photo">Прикрепите фотографию к объявлению:</label>
+
+          <input class="form__input form__input-file" type="file" id="photo" name="photo" accept="image/*">
+
+          <label for="photo" class="order-btn order-btn--size">Загрузить</label>
+        </div>
+        <div class="form__agreement">
+          <div class="form__agreement-header">
+            <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
+            <label class="form__label" for="agreement">
+              Я соглашаюсь с правилами использования сервиса, а также с передачей и обработкой моих данных в evarus.ru.
+              Я
+              подтверждаю своё совершеннолетие и ответственность за размещение.
+            </label>
+
+          </div>
+
+
+          <button class="form__button main-btn" type="submit">Продолжить</button>
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer__content content-wrapper x-center">
+      <div href="/" class="logo">
+        <img src="./images/icon/evacuator_icon1.png" alt="логотип эвакуатор">
+      </div>
+      <ul class="footer-list">
+        <li class="footer-list__item"><a class="footer-list__item-link" href="#">Вызвать эвакуатор</a></li>
+        <li class="footer-list__item"><a class="footer-list__item-link" href="#">Добавить эвакуатор на сайт</a></li>
+        <li class="footer-list__item"><a class="footer-list__item-link" href="#">Помощь</a></li>
+        <li class="footer-list__item"><a class="footer-list__item-link" href="#">Правила оплаты</a></li>
+        <li class="footer-list__item"><a class="footer-list__item-link" href="#">Защита персональных данных</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
