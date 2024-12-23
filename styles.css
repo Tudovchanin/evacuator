@@ -145,6 +145,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .content-wrapper-header {
   max-width: 1760px;
 }
@@ -477,7 +478,7 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--color-background-v3);
- 
+
 }
 
 .service-main__content {
@@ -601,7 +602,7 @@ body {
 .overview__content-img {
   flex-basis: 630px;
   height: min(645px, 40vw);
-  
+
 }
 
 .evacuator-advantages__title {
@@ -652,15 +653,16 @@ body {
 
 .main-content__section-slider {
   display: flex;
-  flex-direction: column;
-  gap: 48px;
+  justify-content: center;
 }
+
 
 .wrapper-slider {
   display: flex;
   flex-direction: column;
   gap: var(--gap-28);
   position: relative;
+
 }
 
 /*-------------------------------------------*/
@@ -669,6 +671,7 @@ body {
 /*обязательные св-ва */
 .container-slider {
   overflow: hidden;
+
 }
 
 /* обязательные св-ва. Анимацию можем поменять */
@@ -698,14 +701,15 @@ body {
   flex-direction: column;
   gap: 20px;
   max-width: 684px;
-  min-height: 35.5vw;
 
-  padding: 40px;
+
+
+  padding: 40px 40px 60px 40px;
   background-color: var(--color-background-v2);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
- 
+
 }
 
 .figure-slide:hover {
@@ -1110,6 +1114,12 @@ body {
 }
 
 @media (max-width: 1645px) {
+
+
+
+.main-content__section-slider {
+  display: block;
+}
   .btn-prev-slide {
     left: 30%;
     bottom: 0;
@@ -1228,7 +1238,7 @@ body {
   .overview__content-img {
     flex-basis: 630px;
     height: 70vw;
-  
+
   }
 
   .overview__footer {
@@ -1312,16 +1322,17 @@ body {
   .figure-slide {
     padding: 20px;
   }
+
   .figure-slide__img {
     height: 100px;
   }
-  
+
   .btn-prev-slide {
     left: -10px;
   }
-  
-  
+
+
   .btn-next-slide {
     right: -10px;
   }
-  }
+}
